@@ -9,9 +9,16 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body >
+<body>
     <x-navbar></x-navbar>
+
+
     <div class="bg-info min-vh-100">
+        @if (session()->has('no'))
+            <div class="alert alert-danger text-center mt-5">
+                {{ session('no') }}
+            </div>
+        @endif
         {{ $slot }}
     </div>
 </body>
