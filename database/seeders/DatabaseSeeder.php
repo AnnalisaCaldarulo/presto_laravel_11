@@ -29,5 +29,11 @@ class DatabaseSeeder extends Seeder
         foreach ($this->categories as $category) {
             Category::create(['name' => $category]);
         }
+        User::create([
+            'name'=>'Annalisa',
+            'email'=>'annalisa@email.it',
+            'password'=>bcrypt('12345678'),
+            'is_revisor'=>true
+        ]);
     }
 }
