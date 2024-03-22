@@ -10,6 +10,8 @@ Route::get('/', [PublicController::class, 'home'])->name('homepage');
 //articles
 Route::get('/create', [ArticleController::class, 'create'])->name('article.create');
 Route::get('/articles/index', [ArticleController::class, 'index'])->name('article.index');
+Route::get('/articles/show/{article}', [ArticleController::class, 'show'])->name('article.show');
+
 
 //category
 Route::get('/category/{category}', [ArticleController::class, 'byCategory'])->name('byCategory');
