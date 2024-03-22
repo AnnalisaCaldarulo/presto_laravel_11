@@ -4,8 +4,6 @@
             <div class="col-12">
                 <h1 class="text-center pt-5 mt-5">{{__("ui.hello")}}</h1>
             </div>
-            @dump(App::currentLocale())
-            @dump(session('locale'))
         </div>
         <div class="row justify-content-center h align-items-center">
             <div class="col-12 col-md-6">
