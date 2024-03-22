@@ -1,5 +1,10 @@
 @import 'bootstrap';
 
-.h{
-    height: 30vh;
+.h {
+    height: 25vh;
+}
+
+.img-preview {
+    height: 100px;
+    width: 100px;
 }
