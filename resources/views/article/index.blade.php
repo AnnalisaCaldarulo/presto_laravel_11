@@ -12,7 +12,7 @@
                         <img src="{{ $article->images()->get()->isNotEmpty() ? Storage::url($article->images()->first()->path) : 'https://picsum.photos/200/118' }}"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">{{$article->title}}</h5>
                             <a href="{{ route('article.show', compact('article')) }}" class="btn btn-primary">Go
                                 somewhere</a>
                         </div>

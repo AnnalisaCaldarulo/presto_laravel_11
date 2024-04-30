@@ -40,12 +40,13 @@
             <div class="col-12">
                 <p>Preview</p>
                 <div class="row border border-info border-4 rounded shadow py-4">
-                    @foreach ($images as $key=>$image)
+                    @foreach ($images as $key => $image)
                         <div class="col my-3  align-items-center">
                             <div class="mx-auto shadow rounded img-preview"
                                 style="background-image: url({{ $image->temporaryUrl() }});">
                             </div>
-                            <button type="button" class="btn btn-danger mx-auto" wire:click="removeImage({{$key}})">X</button>
+                            <button type="button" class="btn btn-danger mx-auto"
+                                wire:click="removeImage({{ $key }})">X</button>
                         </div>
                     @endforeach
                 </div>

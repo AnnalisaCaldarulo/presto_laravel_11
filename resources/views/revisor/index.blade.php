@@ -6,6 +6,7 @@
                     {{ $article_to_check ? "$article_to_check->title" : 'Nessun articolo' }}</h1>
             </div>
         </div>
+        {{$ciao}}
         @if ($article_to_check)
             <div class="row justify-content-around">
                 <div class="col-12 col-md-5 p-5 text-center rounded bg-body-secondary shadow">
